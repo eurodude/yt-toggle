@@ -5,7 +5,7 @@ function toggleDiv(divId) {
   }
 }
 
-// Example: toggle a div with ID "columns" when extension icon is clicked
+// Toggle a div with ID "columns" when extension icon is clicked
 chrome.runtime.onMessage.addListener((request) => {
   if (request.action === "toggleDiv") {
     toggleDiv("columns");
